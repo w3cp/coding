@@ -10,18 +10,18 @@ print('"Isn\'t," she said.')
 s = 'First line.\nSecond line.' # \n means newline
 s # without print(), \n is included in the output
 print(s) # with print(), \n produces a new line
-print ('C:\some\name') # here \n means newline!
+print('C:\some\name') # here \n means newline!
 # If you don’t want characters prefaced by \ to be
 # interpreted as special characters, you can use raw
 # strings by adding an r before the first quote
-print (r'C:\some\name') # note the r before the quote
+print(r'C:\some\name') # note the r before the quote
 # String literals can span multiple lines. One way is using 
 # triple-quotes: """...""" or '''...''' . End of lines are 
 # automatically included in the string, but it’s possible to 
 # prevent this by adding a \ at the end of the line. 
 # The following example produces the following output 
 # (note that the initial newline is not included)
-print ("""\
+print("""\
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
@@ -60,7 +60,8 @@ word[2:5] # characters from position 2 (included) to 5 (excluded)
 # This makes sure that s[:i] + s[i:] is always equal to s :
 word[:2] + word[2:]
 word[:4] + word[4:]
-# Slice indices have useful defaults; an omitted first index defaults #to zero, an omitted second index defaults to the size of the string being sliced.
+# Slice indices have useful defaults; an omitted first index defaults 
+#to zero, an omitted second index defaults to the size of the string being sliced.
 word[:2] # character from the beginning to position 2 (excluded)
 word[4:] # characters from position 4 (included) to the end
 word[-2:] # characters from the second-last (included) to the end
